@@ -3,12 +3,12 @@ package main
 import (
 	"fmt"
 	"github.com/TwiN/go-color"
+	"github.com/destan0098/reconinfo/pkg/iphistory"
+	"github.com/destan0098/reconinfo/pkg/portscanner"
+	"github.com/destan0098/reconinfo/pkg/reversip"
 	"github.com/urfave/cli/v2"
 	"gopkg.in/yaml.v3"
 	"os"
-	"reconinfo/pkg/iphistory"
-	"reconinfo/pkg/portscanner"
-	"reconinfo/pkg/reversip"
 )
 
 type apikey struct {

@@ -2,10 +2,12 @@
 ![Static Badge](https://img.shields.io/badge/Go-100%25-brightgreen)
 ## Description
 
-This tool checks whether the given domain is UP or not, and if it is UP, check that's IP in Active mode and show to you.
+This Tool for recon And Just For Training
 
-- Show IP
-- Show IP And Domain
+
+- Show IP history
+- Port scan
+- Reverse IP
 
 
 ## Table of Contents 
@@ -25,30 +27,13 @@ git clone https://github.com/destan0098/reconinfo.git
 ```
 ## Usage
 
-show Just IP
+show IP history , PortScan And Reverse IP
+Add Your viewdns.info API Key To api.yaml
 ```
-    cat iplist.txt | ipshow -ip
-or
-    echo google.com| ipshow -ip
-or
-    ipshow -ipd -d google.com
+    reconinfo scan --url example.com --iphistory --portscan --reverse
 ```
-show Domain and  IP
-```
-    cat iplist.txt | ipshow -ipd -pipe
-or
-    echo google.com| ipshow -ipd -pipe
-or
-    ipshow -ipd -d google.com
-```
-show Domain and  IP info
-```
-    cat iplist.txt | ipshow -ipin -pipe
-or
-    echo google.com| ipshow -ipin -pipe
-or
-    ipshow -ipin -d google.com
-```
+
+
 
 ---
 
@@ -59,5 +44,5 @@ or
 
 ## Features
 
-Scan and show Fastly 
+Recon App
 
