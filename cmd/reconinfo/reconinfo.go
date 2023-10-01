@@ -90,8 +90,8 @@ func main() {
 					},
 				},
 				Action: func(c *cli.Context) error {
-					inputFile := c.String("url")
-					if inputFile == "test.com" {
+
+					if website == "test.com" {
 
 						fmt.Println(color.Colorize(color.Green, "Please Enter Website Address "))
 						err := cli.ShowAppHelp(c)
@@ -102,20 +102,21 @@ func main() {
 
 					} else {
 						if iphi > 0 {
-							iph := iphistory.DomainIPhistory("example.com", apikeys.APIkey)
+
+							iph := iphistory.DomainIPhistory(website, apikeys.APIkey)
 							for _, Records := range iph.Response.Records {
 								fmt.Printf(color.Colorize(color.Green, "[+] IP : %s , Location : %s , IP Owner : %s , Last Seen : %s \n"), Records.IP, Records.Location, Records.Owner, Records.Lastseen)
 							}
 						}
 						if portsb > 0 {
-							ports := portscanner.PortScanner("example.com", apikeys.APIkey)
+							ports := portscanner.PortScanner(website, apikeys.APIkey)
 
 							for _, portsss := range ports.Response.Port {
 								fmt.Printf(color.Colorize(color.Green, "[+] Port Num: %s , Port Status : %s , Port Service : %s  \n"), portsss.Number, portsss.Status, portsss.Service)
 							}
 						}
 						if revbb > 0 {
-							reversedip := reversip.ReverseIP("example.com", apikeys.APIkey)
+							reversedip := reversip.ReverseIP(website, apikeys.APIkey)
 							for _, reversedipdomain := range reversedip.Response.Domains {
 								//	fmt.Println(reversedipdomain.Name)
 								fmt.Printf(color.Colorize(color.Green, "[+] Domain name %s  \n"), reversedipdomain.Name)
