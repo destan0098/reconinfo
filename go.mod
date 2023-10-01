@@ -1,4 +1,4 @@
-module reconinfo
+module github.com/destan0098/reconinfo
 
 go 1.20
 

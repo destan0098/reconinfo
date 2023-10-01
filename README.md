@@ -18,9 +18,11 @@ This tool checks whether the given domain is UP or not, and if it is UP, check t
 ## Installation
 
 ```
-go install github.com/destan0098/ipshow/cmd/ipshow@latest
+go install github.com/destan0098/reconinfo/cmd/reconinfo@latest
 ```
-
+```
+git clone https://github.com/destan0098/reconinfo.git
+```
 ## Usage
 
 show Just IP
