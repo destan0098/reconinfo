@@ -1,4 +1,4 @@
-# Domain To IP
+# ReCon INfo
 ![Static Badge](https://img.shields.io/badge/Go-100%25-brightgreen)
 ## Description
 
