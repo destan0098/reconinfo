@@ -50,7 +50,7 @@ func main() {
                                                                        
                                                                        
 
-
+ 
 `)
 	fmt.Println(color.Colorize(color.Red, "[*] This tool is for training."))
 	app := &cli.App{
